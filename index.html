@@ -1,0 +1,66 @@
+<!-- Author: Salim Choura-->
+<!-- Course: csc 337-->
+<!-- Description: This file create a sign up page to keep up with astronomy news-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel = "icon" href = "./img/buzz.png" type = "image/x-icon">
+        <title>Super cool astronauts</title>
+    </head>
+    <body>
+        <div id="header">
+            <span><img src="./img/uranus.png" id="uranus_image" alt="image of uranus"></span>
+            <span id="title"> Super cool astronauts</span>
+            <span><img src="./img/jupiter.png" id="jupiter_image" alt="image of jupiter"></span>
+        </div>
+
+        <div id="middle">
+            <div id="text"> Fill this form to become part of the supoer cool astronauts community.
+                Get the lastest news about finding life forms on other planets for 
+                a possibility of expanding human civilization
+            </div>
+            <br><br><br>
+            <form method="POST" action="https://benjdd.com/sp">
+                <label for="first_name"> First Name</label>
+                <input id="first_name" type="text" pattern="[A-Z][A-Za-z]*" name="firstName" required>
+                <br><br><br>
+                <label for="last_name"> Last Name</label>
+                <input id="last_name" type="text" pattern="[A-Z][A-Za-z]*" name="lastName" required>
+                <br><br><br>
+                <label for="primary_email"> Primary email</label>
+                <input id="primary_email" type="email" name="primaryEmail" required>
+                <br><br><br>
+                <label for="recovery_email"> Recovery email</label>
+                <input id="recovery_email" type="email" name="recoveryEmail">
+                <br><br><br>
+                <label for="password"> Password</label>
+                <input id="password" type="password" name="password" required minlength="8">
+                <br><br><br>
+                <label for="phone_number"> Phone number</label>
+                <input id="phone_number" type="tel" name="phoneNumber" pattern="[0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]">
+                <br><br><br>
+                <label for="weight"> Weight in lbs</label>
+                <input id="weight" type="number" name="weightInLbs">
+                <br><br><br>
+                <label> Bio</label>
+                <textarea rows="5" cols="40" name="bio"></textarea>
+                <br><br><br><br><br><br>
+                <label for="birthday"> Birthday</label>
+                <input id="birthday" type="date" name="birthday">
+                <br><br><br>
+                <span id="sentence"> Newsletter sign-up</span>
+                <label for="yes"> Yes</label>
+                <input id="yes" type="radio" value="yes" name="signForNewsletter" required>
+                <label for="no"> No</label>
+                <input id="no" type="radio" value="no" name="signForNewsletter" required>
+                <br><br><br>
+                <label for="satisfaction"> Satisfaction level (1-10):</label>
+                <input id="satisfaction" type="range" name="satisfactionLevel" min="1" max="10">
+                <br><br><br>
+                <button>submit</button>
+            </form>
+        </div>
+    </body>
+</html>
